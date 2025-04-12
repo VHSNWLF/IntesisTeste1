@@ -1,16 +1,16 @@
 package com.example.testeIntesis.domain.entities;
 
-public class clienteEntity {
+public class ClienteEntity {
     private String nome;
     private int id_produto;
     private float total_venda;
     private String cpf;
     private int qtde_produto;
 
-    public clienteEntity() {
+    public ClienteEntity() {
     }
 
-    public clienteEntity(String nome, int id_produto, float total_venda, String cpf, int qtde_produto) {
+    public ClienteEntity(String nome, int id_produto, float total_venda, String cpf, int qtde_produto) {
         this.nome = nome;
         this.id_produto = id_produto;
         this.total_venda = total_venda;
