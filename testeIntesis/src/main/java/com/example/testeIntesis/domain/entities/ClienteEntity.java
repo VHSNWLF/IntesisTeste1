@@ -1,6 +1,7 @@
 package com.example.testeIntesis.domain.entities;
 
 public class ClienteEntity {
+    private int id;
     private String nome;
     private int id_produto;
     private float total_venda;
@@ -10,12 +11,21 @@ public class ClienteEntity {
     public ClienteEntity() {
     }
 
-    public ClienteEntity(String nome, int id_produto, float total_venda, String cpf, int qtde_produto) {
+    public ClienteEntity(int id, String nome, int id_produto, float total_venda, String cpf, int qtde_produto) {
+        this.id = id;
         this.nome = nome;
         this.id_produto = id_produto;
         this.total_venda = total_venda;
         this.cpf = cpf;
         this.qtde_produto = qtde_produto;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
