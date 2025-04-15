@@ -9,6 +9,6 @@ public interface ProdutoRepository {
     ProdutoEntity salvarProduto(ProdutoEntity produto);
     Optional<ProdutoEntity> consultarProdutoPorID(int id);
     List<ProdutoEntity> consultarTodosProdutos();
-    Optional<ProdutoEntity> excluirProdutoPorID(int id);
+    void excluirProdutoPorID(int id);
     ProdutoEntity editarProduto(ProdutoEntity produto);
 }

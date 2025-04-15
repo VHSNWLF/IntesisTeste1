@@ -12,7 +12,7 @@ public class ExcluirClientePorIDUseCase {
         this.clienteRepo = clienteRepo;
     }
 
-    public Optional<ClienteEntity> executar(int id){
-        return  clienteRepo.excluirClientePorID(id);
+    public void executar(int id){
+        clienteRepo.excluirClientePorID(id);
     }
 }

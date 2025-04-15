@@ -13,6 +13,6 @@ public class ConsultarProdutoPorIDUseCase {
     }
 
     public Optional<ProdutoEntity> executar(int id){
-        return  produtoRepo.consultarProdutoPorID(id);
+        return produtoRepo.consultarProdutoPorID(id);
     }
 }

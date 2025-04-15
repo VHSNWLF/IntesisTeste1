@@ -12,7 +12,7 @@ public class ExcluirProdutoPorIDUseCase {
         this.produtoRepo = produtoRepo;
     }
 
-    public Optional<ProdutoEntity> executar(int id){
-        return produtoRepo.excluirProdutoPorID(id);
+    public  executar(int id){
+        produtoRepo.excluirProdutoPorID(id);
     }
 }

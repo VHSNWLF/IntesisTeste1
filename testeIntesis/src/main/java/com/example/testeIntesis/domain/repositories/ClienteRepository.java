@@ -9,6 +9,6 @@ public interface ClienteRepository {
     ClienteEntity salvarCliente(ClienteEntity cliente);
     Optional<ClienteEntity> consultarClientePorID(int id);
     List<ClienteEntity> consultarTodosClientes();
-    Optional<ClienteEntity> excluirClientePorID(int id);
+    void excluirClientePorID(int id);
     ClienteEntity editarCliente(ClienteEntity cliente);
 }

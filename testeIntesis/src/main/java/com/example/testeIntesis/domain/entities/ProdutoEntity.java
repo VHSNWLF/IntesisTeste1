@@ -1,5 +1,7 @@
 package com.example.testeIntesis.domain.entities;
 
+import com.example.testeIntesis.infrastructure.persistence.produto.ProdutoJpaEntity;
+
 public class ProdutoEntity {
     private int id_produto;
     private String nome;
